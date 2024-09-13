@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <div class="sign">
+        <i class="fa-solid"></i>
+      </div>
+      <div class="message">LOADING...</div>
+      <div class="button">OK</div>
+    </div>
+    <div class="container">
+      <div class="inner-container">
+        <!-- box to display timer -->
+        <div class="timer-box">
+          <form action="">
+            <!-- hour -->
+            <input
+              type="number"
+              id="hour"
+              class="time-input"
+              value="00"
+              min="0"
+            />
+            <span class="colon-break">:</span>
+            <!-- minute -->
+            <input
+              type="number"
+              id="minute"
+              class="time-input"
+              value="00"
+              min="0"
+            />
+            <span class="colon-break">:</span>
+            <!-- second -->
+            <input
+              type="number"
+              id="second"
+              class="time-input"
+              value="00"
+              min="0"
+            />
+          </form>
+        </div>
+        <!-- box of controls -->
+        <div class="operation">
+          <div class="play">
+            <span><i class="fa-solid fa-play" id="play"></i></span>
+            <span class="hidden"><i class="fa fa-pause" id="pause"></i></span>
+          </div>
+          <div class="play"><i class="fa-solid fa-stop" id="reset"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>
